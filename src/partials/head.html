@@ -1,0 +1,44 @@
+  <meta charset="utf-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="{{ page.canonical }}">
+  <!-- hreflang links are generated automatically once a second locale (e.g. locales/fr.json) exists -->
+  {{#each page.alternates}}<link rel="alternate" hreflang="{{ this.lang }}" href="{{ this.href }}">
+  {{/each}}
+  <meta name="theme-color" content="#F8F6F1">
+  <meta name="color-scheme" content="light">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ladea">
+  <meta property="og:locale" content="{{ _locale.ogLocale }}">
+  {{#each page.ogAlternates}}<meta property="og:locale:alternate" content="{{ this }}">
+  {{/each}}  <meta property="og:url" content="{{ page.canonical }}">
+  <meta property="og:title" content="{{ page.ogTitle }}">
+  <meta property="og:description" content="{{ page.ogDescription }}">
+  <meta property="og:image" content="{{ page.siteUrl }}/assets/{{ meta.ogImage }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ meta.ogImageAlt }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.ogTitle }}">
+  <meta name="twitter:description" content="{{ page.ogDescription }}">
+  <meta name="twitter:image" content="{{ page.siteUrl }}/assets/{{ meta.ogImage }}">
+  <meta name="twitter:image:alt" content="{{ meta.ogImageAlt }}">
+
+  <!-- Icons (placeholders generated from the logo mark; replace when final icons exist) -->
+  <link rel="icon" href="{{ page.root }}favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="{{ page.root }}favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ page.root }}apple-touch-icon.png">
+
+  <!-- Self-hosted fonts: no third-party requests -->
+  <link rel="preload" href="{{ page.root }}fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ page.root }}fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ page.root }}styles.css">
+  <script defer src="{{ page.root }}script.js"></script>
+
+  <script type="application/ld+json">{{{ page.jsonLd }}}</script>

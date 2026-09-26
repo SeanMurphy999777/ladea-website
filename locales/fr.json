@@ -1,0 +1,279 @@
+{
+  "_locale": {
+    "lang": "fr",
+    "htmlLang": "fr-CA",
+    "ogLocale": "fr_CA",
+    "path": "fr",
+    "label": "Français",
+    "switchLabel": "FR"
+  },
+  "meta": {
+    "title": "Ladea | Implantation de l’IA et amélioration des processus à Montréal",
+    "description": "Ladea, à Montréal, aide les entreprises à repérer les frictions opérationnelles, à corriger leurs processus et à implanter l’IA là où elle crée de la valeur.",
+    "ogTitle": "En IA, le défi n’est pas l’accès. C’est l’implantation.",
+    "ogDescription": "Ladea aide les entreprises à repérer les frictions opérationnelles, à corriger le processus et à appliquer la bonne technologie là où elle crée vraiment de la valeur.",
+    "ogImageAlt": "Logo de Ladea avec la phrase : Repérer la friction d’abord. Ensuite, décider si l’IA a sa place.",
+    "ogImage": "og-image-fr.png"
+  },
+  "schema": {
+    "description": "Ladea Technologies est un partenaire en implantation de l’IA établi à Montréal, au Québec. L’entreprise aide les organisations à repérer les frictions opérationnelles, à améliorer leurs processus et à appliquer l’IA, l’automatisation ou des logiciels existants seulement là où ils créent une valeur mesurable.",
+    "slogan": "Repérer la friction d’abord. Ensuite, décider si l’IA a sa place.",
+    "contactType": "Demandes de nouveaux mandats",
+    "catalogName": "Services",
+    "services": [
+      {
+        "name": "Implantation de l’IA",
+        "description": "Choix, intégration et configuration d’outils d’IA dans les processus d’affaires existants."
+      },
+      {
+        "name": "Amélioration des processus",
+        "description": "Clarifier et simplifier les processus et les transferts avant d’ajouter une technologie, ou au lieu d’en ajouter une."
+      },
+      {
+        "name": "Automatisation des flux de travail",
+        "description": "Automatiser le travail répétitif entre les systèmes : double saisie, courriels récurrents, rapports manuels."
+      },
+      {
+        "name": "Intégration de l’IA",
+        "description": "Relier des capacités d’IA aux systèmes que l’entreprise utilise déjà."
+      },
+      {
+        "name": "Automatisation centrée sur l’humain",
+        "description": "Une automatisation conçue pour que les personnes restent impliquées là où les conséquences, l’ambiguïté ou le jugement le justifient."
+      }
+    ],
+    "knowsAbout": [
+      "Implantation de l’IA",
+      "Intégration de l’IA",
+      "Automatisation des flux de travail",
+      "Amélioration des processus",
+      "Automatisation avec supervision humaine",
+      "Microsoft 365",
+      "Microsoft Copilot"
+    ]
+  },
+  "a11y": {
+    "skip": "Aller au contenu",
+    "home": "Ladea, retour en haut",
+    "primaryNav": "Navigation principale",
+    "languageNav": "Langue",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu"
+  },
+  "nav": {
+    "problem": "L’écart",
+    "approach": "Notre approche",
+    "examples": "Où nous intervenons",
+    "about": "À propos",
+    "cta": "Amorcer la conversation"
+  },
+  "hero": {
+    "eyebrow": "Les opérations d’abord. L’IA là où elle a sa place.",
+    "title": "En IA, le défi n’est pas l’accès. C’est l’implantation.",
+    "lead": "Ladea aide les entreprises à repérer les frictions opérationnelles, à corriger le processus et à appliquer la bonne technologie là où elle crée vraiment de la valeur.",
+    "cta": "Amorcer la conversation",
+    "secondary": "Voir notre approche",
+    "belief": "Repérer la friction d’abord. Ensuite, décider si l’IA a sa place."
+  },
+  "problem": {
+    "label": "L’écart",
+    "title": "Savoir que l’IA compte, ce n’est pas savoir quoi en faire.",
+    "lead": "La plupart des entreprises ne manquent pas d’intérêt. Elles manquent de réponses à des questions concrètes :",
+    "questions": [
+      "Où sont les vraies occasions dans <em>notre</em> entreprise, pas celles des démos?",
+      "Quels processus valent vraiment la peine d’être améliorés?",
+      "Les outils qu’on paie déjà suffisent-ils?",
+      "Où l’automatisation est-elle justifiée, et où est-elle superflue?",
+      "Qu’est-ce qui doit rester entre des mains humaines?",
+      "Comment saura-t-on si ça a fonctionné?"
+    ],
+    "close": "Aucun produit ne répondra à ces questions. Regarder de près comment le travail se fait, oui."
+  },
+  "approach": {
+    "label": "Notre approche",
+    "title": "Nous partons du travail, pas de la technologie.",
+    "lead": "Cinq étapes, dans cet ordre. Sautez les deux premières, et vous risquez d’automatiser le mauvais problème.",
+    "steps": [
+      {
+        "title": "Repérer la friction",
+        "text": "Comprendre où se perdent le temps, l’effort et l’information : les reprises, l’attente, la double saisie, la question à laquelle quelqu’un répond dix fois par jour."
+      },
+      {
+        "title": "Comprendre le processus",
+        "text": "Cartographier ce qui se passe réellement, pas ce que dit la procédure écrite. Pour ça, il faut parler aux personnes qui font le travail."
+      },
+      {
+        "title": "Choisir la bonne solution",
+        "text": "Ce peut être l’IA, l’automatisation des flux de travail, des fonctions de Microsoft 365 ou de Copilot que vous payez déjà, un autre logiciel existant, une intégration sur mesure, ou simplement un meilleur processus. C’est le problème qui décide, pas l’outil."
+      },
+      {
+        "title": "Implanter",
+        "text": "L’intégrer à votre réalité : vos systèmes, vos gens, votre façon de travailler. Puis l’ajuster une fois qu’il rencontre la réalité du travail au quotidien."
+      },
+      {
+        "title": "Mesurer",
+        "text": "Comparer avec le point de départ. Si l’amélioration n’est pas réelle, c’est de nous que vous l’apprendrez en premier."
+      }
+    ]
+  },
+  "examples": {
+    "label": "Où nous intervenons",
+    "title": "Des frictions qui méritent qu’on s’y attarde",
+    "lead": "Le genre de problèmes que nous examinons. Aucun n’exige automatiquement l’IA. Certains demandent un meilleur processus, d’autres un outil que vous avez déjà.",
+    "items": [
+      "Les mêmes courriels de clients, traités à la main tous les jours",
+      "Des employés qui recopient de l’information d’un système à l’autre",
+      "Des rapports refaits à la main chaque semaine ou chaque mois",
+      "Une même tâche faite de trois façons par trois personnes",
+      "Un savoir essentiel qui n’existe que dans la tête d’un employé",
+      "Des licences Microsoft 365 et Copilot que personne n’utilise vraiment",
+      "Des systèmes qui ne se parlent pas",
+      "Des tâches administratives qui grugent des heures sans demander beaucoup de jugement",
+      "Des processus qui tiennent avec des chiffriers et des fils de courriels",
+      "Des transferts où le travail bloque parce que personne ne sait à qui il revient"
+    ],
+    "close": "Vous en reconnaissez quelques-uns? C’est souvent là que la conversation commence.",
+    "closeLink": "Parlez-nous des vôtres"
+  },
+  "principles": {
+    "label": "Notre philosophie",
+    "title": "Le but : de meilleures opérations, pas plus d’IA.",
+    "items": [
+      {
+        "title": "L’IA n’est pas la réponse à tout.",
+        "text": "Si une liste de vérification, un transfert plus clair ou une règle de boîte de réception règle le problème, c’est ce que nous recommanderons."
+      },
+      {
+        "title": "Ce que vous avez déjà passe en premier.",
+        "text": "Bien des entreprises paient déjà pour des logiciels qui font ce dont elles ont besoin. Nous vérifions avant de proposer quoi que ce soit de nouveau."
+      },
+      {
+        "title": "Du sur-mesure seulement quand c’est justifié.",
+        "text": "Nous développons des flux sur mesure quand les outils existants ne conviennent vraiment pas, pas parce que c’est plus intéressant à construire."
+      },
+      {
+        "title": "L’humain dans la boucle, là où ça compte.",
+        "text": "La supervision humaine demeure là où les conséquences, l’ambiguïté ou le jugement le justifient."
+      },
+      {
+        "title": "Indépendants de toute plateforme.",
+        "text": "Microsoft, Google, un logiciel SaaS existant, n8n ou du code sur mesure : nous choisissons ce qui convient à votre entreprise et à votre équipe."
+      }
+    ],
+    "quote": "Comprendre d’abord comment le travail se fait vraiment. Ensuite, décider si la technologie doit le changer.",
+    "origin": "Nous venons du travail opérationnel sur le terrain, où un processus ne vaut que ce qu’il donne pendant une journée chargée."
+  },
+  "about": {
+    "label": "À propos de Ladea",
+    "title": "Un partenaire d’implantation, pas un vendeur de logiciels.",
+    "lead": "Ladea Technologies est un partenaire en implantation de l’IA établi à Montréal, au Québec. Notre travail combine l’amélioration des processus, l’automatisation des flux de travail et l’intégration de l’IA, en s’appuyant sur les logiciels que l’entreprise possède déjà lorsqu’ils conviennent.",
+    "items": [
+      {
+        "term": "Avec qui nous travaillons",
+        "text": "Des entreprises qui savent que l’IA compte, mais qui n’ont pas encore déterminé quoi implanter, ou qui ont essayé des outils qui n’ont jamais vraiment pris. Souvent, des équipes qui perdent du temps en étapes manuelles, en double saisie et en transferts flous."
+      },
+      {
+        "term": "Comment se déroulent nos mandats",
+        "text": "Par étapes : une évaluation d’abord, puis une implantation bien définie, une période de stabilisation et du soutien continu seulement quand il se justifie. Chaque étape est définie séparément. Si vous arrêtez après l’évaluation, vous conservez les constats."
+      },
+      {
+        "term": "Ce que nous ne sommes pas",
+        "text": "Une entreprise de logiciels. Nous n’avons aucune plateforme à vous vendre : nos recommandations suivent le problème, pas un produit."
+      },
+      {
+        "term": "Où nous travaillons",
+        "text": "Établis à Montréal. Nous travaillons en français et en anglais."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Amorcer la conversation",
+    "lead": "Dites-nous ce qui vous ralentit. Une première conversation sert à comprendre votre situation. Si nous ne sommes pas la bonne ressource, nous vous le dirons.",
+    "emailLead": "Vous préférez le courriel?",
+    "emailText": "Écrivez à",
+    "form": {
+      "name": "Nom",
+      "company": "Entreprise",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "optional": "facultatif",
+      "message": "Qu’est-ce qui ralentit votre entreprise?",
+      "messageHint": "Quelques phrases suffisent. Où se perd le temps qui ne devrait pas l’être?",
+      "submit": "Amorcer la conversation",
+      "sending": "Envoi en cours…",
+      "privacy": "Nous utilisons ces renseignements uniquement pour vous répondre. Nous ne les partageons pas et ne vous inscrivons à aucune liste d’envoi.",
+      "privacyLink": "Politique de confidentialité",
+      "honeypot": "Laissez ce champ vide"
+    },
+    "errors": {
+      "summary": "Veuillez vérifier les champs indiqués.",
+      "required": "Ce champ est obligatoire.",
+      "email": "Veuillez entrer une adresse courriel valide, par exemple nom@entreprise.com.",
+      "phone": "Veuillez entrer un numéro de téléphone valide, ou laisser le champ vide.",
+      "messageShort": "Ajoutez un peu plus de détails (au moins 20 caractères).",
+      "network": "Votre message n’a pas pu être envoyé. Réessayez, ou écrivez-nous à info@ladea.ca.",
+      "notConfigured": "Ce formulaire n’est pas encore activé. Écrivez-nous plutôt à info@ladea.ca."
+    },
+    "success": {
+      "title": "Merci. Votre message est bien reçu.",
+      "text": "Nous allons le lire attentivement et vous répondre sous peu."
+    }
+  },
+  "footer": {
+    "tagline": "Repérer la friction d’abord.",
+    "rights": "Ladea Technologies",
+    "location": "Montréal (Québec)",
+    "privacy": "Confidentialité",
+    "backToTop": "Haut de page"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité | Ladea",
+      "description": "Comment Ladea Technologies traite les renseignements que vous transmettez au moyen du formulaire de contact de ladea.ca."
+    },
+    "eyebrow": "Ladea Technologies",
+    "title": "Politique de confidentialité",
+    "updated": "Dernière mise à jour : 24 septembre 2026",
+    "intro": "Cette page explique ce qu’il advient des renseignements que vous nous transmettez au moyen du formulaire de contact de ladea.ca. Elle est courte, parce que le site recueille très peu de renseignements.",
+    "sections": [
+      {
+        "heading": "Qui nous sommes",
+        "body": "<p>Ladea Technologies est établie à Montréal, au Québec. Pour toute question sur vos renseignements personnels, écrivez à <a href=\"mailto:info@ladea.ca\">info@ladea.ca</a>. Cette adresse permet aussi de joindre la personne responsable de la protection des renseignements personnels chez Ladea Technologies.</p>"
+      },
+      {
+        "heading": "Ce que le formulaire recueille",
+        "body": "<ul><li>votre nom</li><li>le nom de votre entreprise</li><li>votre adresse courriel</li><li>votre numéro de téléphone, seulement si vous choisissez de le fournir</li><li>votre message</li></ul><p>Le formulaire enregistre aussi la version linguistique du site que vous avez utilisée, afin que nous puissions vous répondre dans la même langue.</p>"
+      },
+      {
+        "heading": "Pourquoi nous les recueillons",
+        "body": "<p>Nous utilisons ces renseignements pour répondre à votre demande et, si vous souhaitez poursuivre la conversation, pour faire un suivi avec vous. Nous ne les utilisons à aucune autre fin.</p>"
+      },
+      {
+        "heading": "Aucune liste de marketing",
+        "body": "<p>Nous ne vous inscrivons à aucune infolettre ni liste de marketing. Si nous en offrons une un jour, vous n’y serez inscrit que si vous y consentez expressément.</p>"
+      },
+      {
+        "heading": "Qui y a accès",
+        "body": "<p>Nous ne vendons ni ne louons vos renseignements. Votre message nous parvient au moyen des outils que nous utilisons pour recevoir et gérer les demandes, comme des services de traitement de formulaires et de courriel. Ces fournisseurs les traitent pour notre compte, et certains peuvent les conserver à l’extérieur du Québec.</p>"
+      },
+      {
+        "heading": "Durée de conservation",
+        "body": "<p>Nous conservons les demandes seulement le temps nécessaire pour y répondre et faire un suivi avec vous. Vous pouvez nous demander de supprimer vos renseignements en tout temps.</p>"
+      },
+      {
+        "heading": "Vos choix",
+        "body": "<p>Vous pouvez demander à consulter les renseignements personnels que nous détenons à votre sujet, à les faire corriger ou à les faire supprimer. Écrivez à <a href=\"mailto:info@ladea.ca\">info@ladea.ca</a>.</p>"
+      },
+      {
+        "heading": "Témoins et suivi",
+        "body": "<p>Ce site n’utilise ni témoins (cookies), ni outils d’analyse, ni traceurs publicitaires, et il ne charge aucun script ni aucune police de tiers. Comme pour tout site Web, notre hébergeur peut traiter des données techniques, comme des adresses IP, pour afficher et protéger le site.</p>"
+      },
+      {
+        "heading": "Modifications",
+        "body": "<p>Si nos pratiques changent, nous mettrons cette page à jour, ainsi que la date indiquée en haut.</p>"
+      }
+    ],
+    "back": "Retour au formulaire de contact"
+  }
+}

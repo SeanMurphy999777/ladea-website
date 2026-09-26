@@ -1,0 +1,12 @@
+# robots.txt for https://ladea.ca
+# Everything on this site is public. All search engines may crawl all of it,
+# including Googlebot, Bingbot (which also feeds Copilot) and the rest.
+User-agent: *
+Allow: /
+
+# OpenAI's search crawler, used for ChatGPT Search results and citations.
+# Allowed explicitly so an intention is on record, not just implied by the rule above.
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://ladea.ca/sitemap.xml

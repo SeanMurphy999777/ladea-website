@@ -1,0 +1,19 @@
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="{{ page.root }}assets/ladea-logo.svg" alt="Ladea" width="60" height="70">
+        <p>{{ footer.tagline }}</p>
+      </div>
+      <div class="footer-meta">
+        <p>&copy; <span data-year>{{ page.year }}</span> {{ footer.rights }} · {{ footer.location }}</p>
+        {{#if page.multilingual}}
+        <ul class="lang-switch" aria-label="{{ a11y.languageNav }}">
+          {{#each page.languages}}<li><a href="{{ this.href }}" hreflang="{{ this.lang }}" lang="{{ this.lang }}" {{{ this.current }}}>{{ this.label }}</a></li>{{/each}}
+        </ul>
+        {{/if}}
+        {{#if page.privacyUrl}}<a href="{{ page.privacyUrl }}">{{ footer.privacy }}</a>{{/if}}
+        <a class="text-link" href="#top">{{ footer.backToTop }}</a>
+      </div>
+    </div>
+  </footer>

@@ -1,0 +1,36 @@
+<!doctype html>
+{{!--
+  PRIVACY PAGE TEMPLATE: one template for every language.
+  Copy lives in locales/<lang>.json → "privacy". Section bodies are raw HTML
+  (paragraphs, lists, mailto links), so keep them simple and well-formed.
+  URL per language comes from site.json → pages.privacy.slug.
+--}}
+<html lang="{{ _locale.htmlLang }}">
+<head>
+{{> head}}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ a11y.skip }}</a>
+
+{{> header}}
+  <main id="main">
+    <article class="legal" id="top" aria-labelledby="legal-title">
+      <div class="container legal-inner">
+        <p class="eyebrow">{{ privacy.eyebrow }}</p>
+        <h1 id="legal-title" class="legal-title">{{ privacy.title }}</h1>
+        <p class="legal-updated">{{ privacy.updated }}</p>
+        <p class="legal-intro">{{ privacy.intro }}</p>
+        {{#each privacy.sections}}
+        <section class="legal-section">
+          <h2>{{ this.heading }}</h2>
+          {{{ this.body }}}
+        </section>
+        {{/each}}
+        <p class="legal-back"><a class="text-link" href="{{ page.home }}#contact">{{ privacy.back }}</a></p>
+      </div>
+    </article>
+  </main>
+
+{{> footer}}
+</body>
+</html>

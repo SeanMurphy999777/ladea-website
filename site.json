@@ -1,0 +1,31 @@
+{
+  "_comment": "Site-wide settings. Edit here, then run `node build.mjs`. See README.md.",
+
+  "siteUrl": "https://ladea.ca",
+  "defaultLocale": "en",
+
+  "pages": {
+    "_comment": "Each page is rendered once per language. slug = the URL segment after the language folder (empty = language home).",
+    "home":    { "template": "src/page.html",    "slug": { "en": "", "fr": "" } },
+    "privacy": { "template": "src/privacy.html", "slug": { "en": "privacy", "fr": "confidentialite" } }
+  },
+
+  "form": {
+    "_comment": "N8N: paste the Webhook node's PRODUCTION URL into endpoint (it looks like https://<your-n8n-host>/webhook/<path>), then run `node build.mjs`. adapter: json (n8n default) | formdata | hubspot. Never put credentials or API keys here: this value is visible in the public page source.",
+    "endpoint": "https://ladea.app.n8n.cloud/webhook/ladea-contact",
+    "adapter": "json"
+  },
+
+  "organization": {
+    "_comment": "Only confirmed facts. Used for JSON-LD structured data. Empty values are left out: add telephone / sameAs (e.g. a LinkedIn URL) only when they exist.",
+    "name": "Ladea Technologies",
+    "alternateName": "Ladea",
+    "city": "Montréal",
+    "region": "QC",
+    "country": "CA",
+    "serviceLanguages": ["en", "fr"],
+    "email": "info@ladea.ca",
+    "telephone": "",
+    "sameAs": []
+  }
+}

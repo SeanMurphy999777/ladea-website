@@ -1,0 +1,279 @@
+{
+  "_locale": {
+    "lang": "en",
+    "htmlLang": "en-CA",
+    "ogLocale": "en_CA",
+    "path": "",
+    "label": "English",
+    "switchLabel": "EN"
+  },
+  "meta": {
+    "title": "Ladea | AI Implementation and Process Improvement in Montréal",
+    "description": "Ladea is a Montréal-based AI implementation partner. We find operational friction, fix the process, then apply the right technology where it creates value.",
+    "ogTitle": "The AI gap isn’t access. It’s implementation.",
+    "ogDescription": "Ladea helps businesses find operational friction, fix the process, and apply the right technology where it actually creates value.",
+    "ogImageAlt": "Ladea logo with the line: Find the friction first. Then decide whether AI belongs there.",
+    "ogImage": "og-image.png"
+  },
+  "schema": {
+    "description": "Ladea Technologies is an AI implementation partner based in Montréal, Québec. It helps businesses find operational friction, improve the underlying process, and apply AI, workflow automation or existing software only where it creates measurable value.",
+    "slogan": "Find the friction first. Then decide whether AI belongs there.",
+    "contactType": "New business inquiries",
+    "catalogName": "Services",
+    "services": [
+      {
+        "name": "AI implementation",
+        "description": "Selecting, integrating and configuring AI tools inside existing business processes."
+      },
+      {
+        "name": "Process improvement",
+        "description": "Clarifying and simplifying processes and handoffs before, or instead of, adding new technology."
+      },
+      {
+        "name": "Workflow automation",
+        "description": "Automating repetitive, rules-based work between systems, such as re-keyed data, routine emails and manual reports."
+      },
+      {
+        "name": "AI integration",
+        "description": "Connecting AI capabilities to the systems a business already uses."
+      },
+      {
+        "name": "Human-centred automation",
+        "description": "Automation designed so that people stay involved where the consequences, ambiguity or judgment warrant it."
+      }
+    ],
+    "knowsAbout": [
+      "AI implementation",
+      "AI integration",
+      "Workflow automation",
+      "Process improvement",
+      "Human-in-the-loop automation",
+      "Microsoft 365",
+      "Microsoft Copilot"
+    ]
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "home": "Ladea, back to top",
+    "primaryNav": "Primary",
+    "languageNav": "Language",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "nav": {
+    "problem": "The gap",
+    "approach": "What we do",
+    "examples": "Where we help",
+    "about": "About",
+    "cta": "Start a conversation"
+  },
+  "hero": {
+    "eyebrow": "Operations first. AI where it fits.",
+    "title": "The AI gap isn’t access. It’s implementation.",
+    "lead": "Ladea helps businesses find operational friction, fix the process, and apply the right technology where it actually creates value.",
+    "cta": "Start a conversation",
+    "secondary": "See how we work",
+    "belief": "Find the friction first. Then decide whether AI belongs there."
+  },
+  "problem": {
+    "label": "The gap",
+    "title": "Knowing AI matters isn’t the same as knowing what to do with it.",
+    "lead": "Most businesses aren’t short on interest. They’re short on answers to practical questions:",
+    "questions": [
+      "Where are the real opportunities in <em>our</em> business, not the ones in the demos?",
+      "Which processes are actually worth improving?",
+      "Are the tools we already pay for good enough?",
+      "Where is automation justified, and where is it overkill?",
+      "What should stay in human hands?",
+      "How would we know if it worked?"
+    ],
+    "close": "A product won’t answer those. Looking closely at how the work gets done will."
+  },
+  "approach": {
+    "label": "What we do",
+    "title": "We start with the work, not the technology.",
+    "lead": "Five steps, in this order. Skip the first two, and you risk automating the wrong problem.",
+    "steps": [
+      {
+        "title": "Find the friction",
+        "text": "Understand where time, effort and information are being lost: the rework, the waiting, the double entry, the question someone answers ten times a day."
+      },
+      {
+        "title": "Understand the process",
+        "text": "Map what actually happens, not what the procedure document says happens. That means talking to the people doing the work."
+      },
+      {
+        "title": "Choose the right solution",
+        "text": "It might be AI, workflow automation, Microsoft 365 or Copilot features you already pay for, other existing software, a custom integration, or simply a better process. The problem decides, not the tool."
+      },
+      {
+        "title": "Implement",
+        "text": "Integrate it into the actual business: your systems, your people, your way of working. Then adjust it once it meets the realities of day-to-day work."
+      },
+      {
+        "title": "Measure",
+        "text": "Compare against where you started. If it didn’t create a meaningful improvement, you’ll hear that from us first."
+      }
+    ]
+  },
+  "examples": {
+    "label": "Where we help",
+    "title": "Friction worth looking at",
+    "lead": "The kinds of problems we investigate. None of them automatically calls for AI. Some need a better process, some need a tool you already have.",
+    "items": [
+      "The same customer emails, answered by hand every day",
+      "Staff copying information from one system into another",
+      "Reports rebuilt manually every week or month",
+      "One task done three different ways by three different people",
+      "Critical knowledge that lives in one employee’s head",
+      "Microsoft 365 and Copilot licences nobody is really using",
+      "Systems that don’t talk to each other",
+      "Administrative work that eats hours but needs little judgment",
+      "Workflows held together by spreadsheets and email threads",
+      "Handoffs where work stalls because no one is sure who owns it next"
+    ],
+    "close": "Recognize a few of these? That’s usually where the conversation starts.",
+    "closeLink": "Tell us about yours"
+  },
+  "principles": {
+    "label": "How we think",
+    "title": "The goal is better operations, not more AI.",
+    "items": [
+      {
+        "title": "Not every problem needs AI.",
+        "text": "If a checklist, a clearer handoff or an inbox rule fixes it, that’s what we’ll recommend."
+      },
+      {
+        "title": "What you already own comes first.",
+        "text": "Many businesses already pay for software that does what they need. We check before suggesting anything new."
+      },
+      {
+        "title": "Custom only when it’s justified.",
+        "text": "We build custom workflows when existing tools genuinely don’t fit, not because building is more interesting."
+      },
+      {
+        "title": "Human-in-the-loop where it matters.",
+        "text": "Human oversight stays where the consequences, ambiguity or judgment warrant it."
+      },
+      {
+        "title": "Not tied to any platform.",
+        "text": "Microsoft, Google, existing SaaS, n8n or custom code: we choose what fits your business and your team."
+      }
+    ],
+    "quote": "Understand how the work actually happens first. Then decide whether technology should change it.",
+    "origin": "We come from hands-on operations work, where a process is only as good as how it holds up on a busy day."
+  },
+  "about": {
+    "label": "About Ladea",
+    "title": "An implementation partner, not a software vendor.",
+    "lead": "Ladea Technologies is an AI implementation partner based in Montréal, Québec. Our work combines process improvement, workflow automation and AI integration, using the software a business already has wherever it genuinely fits.",
+    "items": [
+      {
+        "term": "Who we work with",
+        "text": "Businesses that know AI matters but haven’t worked out what to implement, or that have tried tools that never quite stuck. Usually teams losing time to manual steps, re-keyed data and unclear handoffs."
+      },
+      {
+        "term": "How engagements work",
+        "text": "In stages: an assessment first, then a defined implementation, a stabilization period, and ongoing support only where it’s justified. Each stage is scoped on its own. If you stop after the assessment, you keep the findings."
+      },
+      {
+        "term": "What we’re not",
+        "text": "A software company. We have no platform to sell you, so recommendations follow the problem, not a product."
+      },
+      {
+        "term": "Where we work",
+        "text": "Based in Montréal. We work in English and French."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Start a conversation",
+    "lead": "Tell us what’s slowing things down. A first conversation is about understanding your situation. If we’re not the right fit, we’ll say so.",
+    "form": {
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "optional": "optional",
+      "message": "What is slowing your business down?",
+      "messageHint": "A few sentences is plenty. Where does time go that shouldn’t?",
+      "submit": "Start a conversation",
+      "sending": "Sending…",
+      "privacy": "We use these details only to reply to you. We don’t share them or add you to a mailing list.",
+      "privacyLink": "Privacy policy",
+      "honeypot": "Leave this field empty"
+    },
+    "errors": {
+      "summary": "Please check the highlighted fields.",
+      "required": "This field is required.",
+      "email": "Please enter a valid email address, like name@company.com.",
+      "phone": "Please enter a valid phone number, or leave it blank.",
+      "messageShort": "Please add a little more detail (at least 20 characters).",
+      "network": "Your message couldn’t be sent. Please try again, or write to us at info@ladea.ca.",
+      "notConfigured": "This form isn’t connected yet. Please write to us at info@ladea.ca instead."
+    },
+    "success": {
+      "title": "Thank you. Your message is in.",
+      "text": "We’ll read it properly and get back to you soon."
+    },
+    "emailLead": "Prefer email?",
+    "emailText": "Write to"
+  },
+  "footer": {
+    "tagline": "Find the friction first.",
+    "rights": "Ladea Technologies",
+    "location": "Montréal, Québec",
+    "privacy": "Privacy policy",
+    "backToTop": "Back to top"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | Ladea",
+      "description": "How Ladea Technologies handles the information you send through the contact form on ladea.ca."
+    },
+    "eyebrow": "Ladea Technologies",
+    "title": "Privacy policy",
+    "updated": "Last updated: September 24, 2026",
+    "intro": "This page explains what happens to the information you send us through the contact form on ladea.ca. It is short because the site collects very little.",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "<p>Ladea Technologies is based in Montréal, Québec. For any question about your personal information, write to <a href=\"mailto:info@ladea.ca\">info@ladea.ca</a>. That address also reaches the person responsible for the protection of personal information at Ladea Technologies.</p>"
+      },
+      {
+        "heading": "What the contact form collects",
+        "body": "<ul><li>your name</li><li>your company name</li><li>your email address</li><li>your phone number, only if you choose to give it</li><li>your message</li></ul><p>The form also records which language version of the site you used, so we can reply in the same language.</p>"
+      },
+      {
+        "heading": "Why we collect it",
+        "body": "<p>We use this information to respond to your inquiry and, if you want to continue the conversation, to follow up with you about it. We don’t use it for anything else.</p>"
+      },
+      {
+        "heading": "No marketing lists",
+        "body": "<p>We do not add you to a newsletter or marketing list. If we ever offer one, you will only be added if you explicitly opt in.</p>"
+      },
+      {
+        "heading": "Who has access",
+        "body": "<p>We don’t sell or rent your information. Your message reaches us through the tools we use to receive and manage inquiries, such as form-processing and email services. Those providers handle it on our behalf, and some of them may store data outside Québec.</p>"
+      },
+      {
+        "heading": "How long we keep it",
+        "body": "<p>We keep inquiries only as long as we need them to respond and to follow up with you. You can ask us to delete your information at any time.</p>"
+      },
+      {
+        "heading": "Your choices",
+        "body": "<p>You can ask to see the personal information we hold about you, to correct it, or to have it deleted. Write to <a href=\"mailto:info@ladea.ca\">info@ladea.ca</a>.</p>"
+      },
+      {
+        "heading": "Cookies and tracking",
+        "body": "<p>This site does not use cookies, analytics or advertising trackers, and it does not load third-party scripts or fonts. As with any website, our hosting provider may process technical data, such as IP addresses, to deliver and protect the site.</p>"
+      },
+      {
+        "heading": "Changes to this page",
+        "body": "<p>If our practices change, we will update this page and the date at the top.</p>"
+      }
+    ],
+    "back": "Back to the contact form"
+  }
+}

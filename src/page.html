@@ -1,0 +1,242 @@
+<!doctype html>
+{{!--
+  ============================================================================
+  LADEA — PAGE TEMPLATE (single source for every language)
+  ----------------------------------------------------------------------------
+  Do not edit public/index.html directly: it is generated from this file.
+  Edit copy in  locales/<lang>.json  and settings in  site.json,
+  then run      node build.mjs
+
+  Template syntax (see build.mjs):
+    {{ key.path }}           text from the locale file (HTML-escaped)
+    {{{ key.path }}}         same, but raw (only for strings that contain markup)
+    {{#each list}} … {{/each}}   loop; inside use {{ this }}, {{ this.title }}, {{ @num }}
+    {{#if key}} … {{/if}}    render only when key is truthy
+    page.*  values computed per language by the build (root, canonical, …)
+    site.*  values from site.json
+  ============================================================================
+--}}
+<html lang="{{ _locale.htmlLang }}">
+<head>
+{{> head}}
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ a11y.skip }}</a>
+
+{{> header}}
+  <main id="main">
+    <!-- ============================ 1. HERO ============================ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">{{ hero.eyebrow }}</p>
+          <h1 id="hero-title" class="hero-title">{{ hero.title }}</h1>
+          <p class="hero-lead">{{ hero.lead }}</p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">{{ hero.cta }}</a>
+            <a class="text-link" href="#approach">{{ hero.secondary }}</a>
+          </div>
+        </div>
+        <figure class="hero-mark" aria-hidden="true">
+          <img src="{{ page.root }}assets/ladea-mark.svg" alt="" width="966" height="1781">
+        </figure>
+      </div>
+      <div class="container">
+        <p class="belief"><span class="belief-rule" aria-hidden="true"></span>{{ hero.belief }}</p>
+      </div>
+    </section>
+
+    <!-- ============================ 2. PROBLEM ============================ -->
+    <section class="section" id="problem" aria-labelledby="problem-title">
+      <div class="container split">
+        <header class="section-head">
+          <p class="section-label">{{ problem.label }}</p>
+          <h2 id="problem-title">{{ problem.title }}</h2>
+        </header>
+        <div class="section-body">
+          <p class="lead">{{ problem.lead }}</p>
+          <ul class="question-list">
+            {{#each problem.questions}}<li data-reveal><span>{{{ this }}}</span></li>
+            {{/each}}
+          </ul>
+          <p class="closing">{{ problem.close }}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 3. WHAT LADEA DOES ============================ -->
+    <section class="section section-alt" id="approach" aria-labelledby="approach-title">
+      <div class="container split">
+        <header class="section-head sticky-head">
+          <p class="section-label">{{ approach.label }}</p>
+          <h2 id="approach-title">{{ approach.title }}</h2>
+          <p class="section-intro">{{ approach.lead }}</p>
+        </header>
+        <ol class="step-list">
+          {{#each approach.steps}}
+          <li class="step" data-reveal>
+            <span class="step-num" aria-hidden="true">{{ @num }}</span>
+            <div>
+              <h3>{{ this.title }}</h3>
+              <p>{{ this.text }}</p>
+            </div>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================ 4. EXAMPLES ============================ -->
+    <section class="section" id="examples" aria-labelledby="examples-title">
+      <div class="container">
+        <header class="section-head section-head-wide">
+          <p class="section-label">{{ examples.label }}</p>
+          <h2 id="examples-title">{{ examples.title }}</h2>
+          <p class="section-intro">{{ examples.lead }}</p>
+        </header>
+        <ul class="friction-list">
+          {{#each examples.items}}<li data-reveal><span>{{ this }}</span></li>
+          {{/each}}
+        </ul>
+        <p class="closing closing-inline">{{ examples.close }} <a class="text-link" href="#contact">{{ examples.closeLink }}</a></p>
+      </div>
+    </section>
+
+    <!-- ============================ 5. PRINCIPLES ============================ -->
+    <section class="section section-dark" id="principles" aria-labelledby="principles-title">
+      <div class="container">
+        <header class="section-head section-head-wide">
+          <p class="section-label">{{ principles.label }}</p>
+          <h2 id="principles-title">{{ principles.title }}</h2>
+        </header>
+        <ul class="principle-grid">
+          {{#each principles.items}}
+          <li class="principle" data-reveal>
+            <h3>{{ this.title }}</h3>
+            <p>{{ this.text }}</p>
+          </li>
+          {{/each}}
+        </ul>
+        <figure class="philosophy">
+          <blockquote><p>{{ principles.quote }}</p></blockquote>
+          <figcaption>{{ principles.origin }}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============================ 6. ABOUT ============================
+         Plain, quotable statements: what Ladea is, who it helps, how it works, where.
+         Search engines and AI answer engines tend to lift sentences like these directly. -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split">
+        <header class="section-head">
+          <p class="section-label">{{ about.label }}</p>
+          <h2 id="about-title">{{ about.title }}</h2>
+        </header>
+        <div class="section-body">
+          <p class="about-lead">{{ about.lead }}</p>
+          <dl class="fact-list">
+            {{#each about.items}}
+            <div class="fact" data-reveal>
+              <dt>{{ this.term }}</dt>
+              <dd>{{ this.text }}</dd>
+            </div>
+            {{/each}}
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ 7. CONTACT ============================ -->
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container split">
+        <header class="section-head">
+          <p class="section-label">{{ contact.label }}</p>
+          <h2 id="contact-title">{{ contact.title }}</h2>
+          <p class="section-intro">{{ contact.lead }}</p>
+          <p class="contact-email">{{ contact.emailLead }} {{ contact.emailText }} <a href="mailto:{{ site.organization.email }}">{{ site.organization.email }}</a>.</p>
+        </header>
+
+        <div class="form-wrap">
+          <!--
+            CONTACT FORM
+            - The submission endpoint comes from site.json → form.endpoint (injected into action="").
+            - The adapter (formdata | json | hubspot) comes from site.json → form.adapter.
+            - Without JavaScript the browser posts the form normally to the same endpoint.
+            - Field names (name, company, email, phone, message) are what the backend receives.
+            See README.md → "Connecting the form".
+          -->
+          <form class="contact-form" action="{{ site.form.endpoint }}" method="post"
+                data-contact-form
+                data-adapter="{{ site.form.adapter }}"
+                data-msg-summary="{{ contact.errors.summary }}"
+                data-msg-required="{{ contact.errors.required }}"
+                data-msg-email="{{ contact.errors.email }}"
+                data-msg-phone="{{ contact.errors.phone }}"
+                data-msg-message-short="{{ contact.errors.messageShort }}"
+                data-msg-network="{{ contact.errors.network }}"
+                data-msg-not-configured="{{ contact.errors.notConfigured }}"
+                data-msg-sending="{{ contact.form.sending }}">
+
+            <p class="form-summary" role="alert" data-form-summary hidden></p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">{{ contact.form.name }}</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="f-name-err">
+                <p class="field-error" id="f-name-err" data-error-for="name"></p>
+              </div>
+              <div class="field">
+                <label for="f-company">{{ contact.form.company }}</label>
+                <input id="f-company" name="company" type="text" autocomplete="organization" required maxlength="160" aria-describedby="f-company-err">
+                <p class="field-error" id="f-company-err" data-error-for="company"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-email">{{ contact.form.email }}</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" aria-describedby="f-email-err">
+                <p class="field-error" id="f-email-err" data-error-for="email"></p>
+              </div>
+              <div class="field">
+                <label for="f-phone">{{ contact.form.phone }} <span class="optional">({{ contact.form.optional }})</span></label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="40" aria-describedby="f-phone-err">
+                <p class="field-error" id="f-phone-err" data-error-for="phone"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-message">{{ contact.form.message }}</label>
+              <p class="field-hint" id="f-message-hint">{{ contact.form.messageHint }}</p>
+              <textarea id="f-message" name="message" rows="6" required minlength="20" maxlength="5000" aria-describedby="f-message-hint f-message-err"></textarea>
+              <p class="field-error" id="f-message-err" data-error-for="message"></p>
+            </div>
+
+            <!-- Spam trap: hidden from people, filled in by bots. "_gotcha" is Formspree's convention. -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-hp">{{ contact.form.honeypot }}</label>
+              <input id="f-hp" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <input type="hidden" name="language" value="{{ _locale.lang }}">
+
+            <div class="form-actions">
+              <button class="button" type="submit" data-submit>{{ contact.form.submit }}</button>
+              <p class="form-privacy">{{ contact.form.privacy }} {{#if page.privacyUrl}}<a href="{{ page.privacyUrl }}">{{ contact.form.privacyLink }}</a>{{/if}}</p>
+            </div>
+          </form>
+
+          <div class="form-success" data-form-success tabindex="-1" hidden>
+            <img src="{{ page.root }}assets/ladea-mark.svg" alt="" width="24" height="44">
+            <h3>{{ contact.success.title }}</h3>
+            <p>{{ contact.success.text }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+{{> footer}}
+</body>
+</html>
