@@ -64,3 +64,11 @@ for H, path in [(h, 'brand/ladea-wordmark-transparent.png'), (120, 'public/asset
     out = wm if H == h else resize_rgba(wm, (round(w * H / h), H))
     out.save(ROOT / path, optimize=True)
     print(path, out.size)
+
+# reversed wordmark for the aubergine page: same shapes and edges, white ink
+r = np.asarray(wm).copy()
+r[..., :3] = 255
+white = Image.fromarray(r, 'RGBA')
+out = resize_rgba(white, (round(w * 120 / h), 120))
+out.save(PUB / 'assets/ladea-wordmark-white.png', optimize=True)
+print('public/assets/ladea-wordmark-white.png', out.size)

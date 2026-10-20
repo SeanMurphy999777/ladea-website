@@ -157,8 +157,8 @@ To do manually:
 
 ## 6. Design notes
 
-- **Colours** come straight from the logos: aubergine `#390941` (text, headings, dark band) and vermilion `#FD5210` (buttons, rules, bullets) on warm white `#FAF8F5`. Buttons are vermilion with aubergine labels (5.0:1). Vermilion is too light for small text on the warm white, so vermilion-coloured text uses `#B8360A` (5.6:1). All text meets WCAG AA.
-- **Logos** are never redrawn. `brand/` holds the two supplied files. `python3 brand/make-assets.py` resizes the L icon (its aubergine square is part of the icon) and makes the wordmark's white background transparent; it also writes the favicons. `node brand/make-og.mjs` renders both social images with the site fonts. Re-run both if the logo files change.
+- **Colours** come straight from the logos: the page is aubergine `#390941` with white text (`#FFFFFF` headings, `#FAF8F5` body, `#D9C8DB` secondary), and vermilion `#FD5210` for buttons, labels, rules and bullets. Buttons are vermilion with aubergine labels (5.0:1) and turn white on hover. The "How we think" band is a darker aubergine `#23042A`. The contact form sits on a white card that switches back to aubergine text. All text meets WCAG AA. Print falls back to dark text on white.
+- **Logos** are never redrawn. `brand/` holds the two supplied files. `python3 brand/make-assets.py` resizes the L icon (its aubergine square is part of the icon) and makes the wordmark's white background transparent (plus a white version for the aubergine header); it also writes the favicons. `node brand/make-og.mjs` renders both social images with the site fonts. Re-run both if the logo files change.
 - **Type:** Newsreader (headings) and Instrument Sans (body), self-hosted.
 - **French typography** follows OQLF conventions: non-breaking space before colons, none before `?` and `!`.
 - **Mobile:** tested at 375px. Section spacing is 60px on narrow phones, primary buttons go full-width, and form inputs are 16px so iOS doesn't zoom.
