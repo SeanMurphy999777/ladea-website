@@ -38,7 +38,7 @@
   <!-- Self-hosted fonts: no third-party requests -->
   <link rel="preload" href="{{ page.root }}fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ page.root }}fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="{{ page.root }}styles.css">
-  <script defer src="{{ page.root }}script.js"></script>
+  <link rel="stylesheet" href="{{ page.root }}styles.css?v={{ page.assetVersion.css }}">
+  <script defer src="{{ page.root }}script.js?v={{ page.assetVersion.js }}"></script>
 
   <script type="application/ld+json">{{{ page.jsonLd }}}</script>

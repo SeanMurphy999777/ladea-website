@@ -19,6 +19,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
@@ -102,6 +103,10 @@ const home = pages.find((p) => p.id === 'home');
 const privacy = pages.find((p) => p.id === 'privacy');
 const multilingual = locales.length > 1;
 const year = new Date().getFullYear();
+// Cache-busting: ?v=<content hash> on styles.css and script.js, so browsers and CDNs
+// fetch the new file whenever it changes, instead of pairing new HTML with old CSS.
+const version = (file) => createHash('sha256').update(readFileSync(join(ROOT, 'public', file))).digest('hex').slice(0, 10);
+const assetVersion = { css: version('styles.css'), js: version('script.js') };
 
 for (const page of pages) {
   for (const loc of locales) {
@@ -226,6 +231,7 @@ for (const page of pages) {
         languages,
         multilingual,
         year,
+        assetVersion,
         privacyUrl: root + pathFor(privacy, loc),
         jsonLd: structuredData(page, loc, meta),
       },
