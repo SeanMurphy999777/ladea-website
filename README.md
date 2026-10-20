@@ -24,11 +24,12 @@ ladea-site/
 │   ├── fr/confidentialite/     French privacy policy
 │   ├── styles.css              all styles, organized in numbered sections
 │   ├── script.js               header, mobile menu, scroll reveal, form handling
-│   ├── assets/                 logo (SVG + 512px PNG), og-image.png (EN), og-image-fr.png (FR)
+│   ├── assets/                 L icon (256/800px + 512px for structured data), transparent wordmark, og-image.png (EN), og-image-fr.png (FR)
 │   ├── fonts/                  Newsreader + Instrument Sans (woff2, SIL OFL licence)
-│   ├── favicon.svg / .ico, apple-touch-icon.png
+│   ├── favicon.ico, favicon-192.png, apple-touch-icon.png
 │   └── robots.txt, sitemap.xml generated
 │
+├── brand/                      supplied logo files + scripts that generate every logo asset and both og images
 ├── src/
 │   ├── page.html               home page template (shared by both languages)
 │   ├── privacy.html            privacy page template (shared by both languages)
@@ -156,7 +157,8 @@ To do manually:
 
 ## 6. Design notes
 
-- **Colours** come straight from the logo: navy `#08394B`, gold `#C4A070`. Gold is decorative on light backgrounds. Gold-coloured text uses `#7F6034` (5.4:1 contrast). All text meets WCAG AA.
+- **Colours** come straight from the logos: aubergine `#390941` (text, headings, dark band) and vermilion `#FD5210` (buttons, rules, bullets) on warm white `#FAF8F5`. Buttons are vermilion with aubergine labels (5.0:1). Vermilion is too light for small text on the warm white, so vermilion-coloured text uses `#B8360A` (5.6:1). All text meets WCAG AA.
+- **Logos** are never redrawn. `brand/` holds the two supplied files. `python3 brand/make-assets.py` resizes the L icon (its aubergine square is part of the icon) and makes the wordmark's white background transparent; it also writes the favicons. `node brand/make-og.mjs` renders both social images with the site fonts. Re-run both if the logo files change.
 - **Type:** Newsreader (headings) and Instrument Sans (body), self-hosted.
 - **French typography** follows OQLF conventions: non-breaking space before colons, none before `?` and `!`.
 - **Mobile:** tested at 375px. Section spacing is 60px on narrow phones, primary buttons go full-width, and form inputs are 16px so iOS doesn't zoom.
