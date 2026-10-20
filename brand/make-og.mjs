@@ -24,17 +24,17 @@ const html = (c) => `<!doctype html><html lang="${c.lang}"><head><meta charset="
 @font-face { font-family: Newsreader; src: url(${pub('fonts/newsreader-latin-wght-italic.woff2')}); font-weight: 200 800; font-style: italic; }
 @font-face { font-family: "Instrument Sans"; src: url(${pub('fonts/instrument-sans-latin-wght-normal.woff2')}); font-weight: 400 700; }
 * { margin: 0; box-sizing: border-box; }
-body { width: 1200px; height: 630px; background: #FAF8F5; color: #390941; display: flex; align-items: center; padding: 0 100px; gap: 84px; }
+body { width: 1200px; height: 630px; background: #390941; color: #FFFFFF; display: flex; align-items: center; padding: 0 100px; gap: 84px; }
 .brand { flex: none; display: flex; flex-direction: column; align-items: center; gap: 36px; width: 300px; }
 .brand .icon { width: 280px; height: 280px; display: block; }
 .brand .word { height: 70px; width: auto; display: block; }
 .copy { flex: 1; }
-.label { font: 600 17px/1 "Instrument Sans"; letter-spacing: .14em; text-transform: uppercase; color: #B8360A; }
+.label { font: 600 17px/1 "Instrument Sans"; letter-spacing: .14em; text-transform: uppercase; color: #FD5210; }
 h1 { margin-top: 26px; font: 400 64px/1.08 Newsreader; letter-spacing: -.015em; }
 hr { margin: 44px 0 30px; border: 0; height: 2px; width: 72px; background: #FD5210; }
-p { font: italic 400 30px/1.3 Newsreader; }
+p { font: italic 400 30px/1.3 Newsreader; color: #FAF8F5; }
 </style></head><body>
-<div class="brand"><img class="icon" src="${pub('assets/ladea-icon-800.png')}" alt=""><img class="word" src="${pub('assets/ladea-wordmark.png')}" alt=""></div>
+<div class="brand"><img class="icon" src="${pub('assets/ladea-icon-800.png')}" alt=""><img class="word" src="${pub('assets/ladea-wordmark-white.png')}" alt=""></div>
 <div class="copy"><div class="label">Ladea Technologies</div><h1>${c.title}</h1><hr><p>${c.sub}</p></div>
 </body></html>`;
 
